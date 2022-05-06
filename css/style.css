@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #434343;
+  --secondary-color: #7a7a7a;
+  --color-success: #285193;
+}
+/* General styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--primary-color);
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* General styles */
+
+/* Site header */
+.site-header {
+  border-top: 4px solid #295093;
+  background-color: #f6f6f9;
+  padding: 40px 0 23px 0;
+}
+.site-header__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 19px;
+}
+.site-header__actions {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin-right: 22px;
+}
+.language-toggler {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-right: 24px;
+}
+.language-toggler__img {
+  border-radius: 50%;
+}
+.telegram-sub {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #1e96c8;
+  background-image: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+}
+.telegram-sub__img {
+  margin-right: 7px;
+}
+/* Site header */
+/* Logo */
+.logo {
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+  transition: transform 0.3s ease;
+}
+.logo img {
+  display: block;
+}
+.logo:hover {
+  transform: scaleX(1.025);
+  padding: 4px 8px;
+}
+.logo:focus {
+  box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
+}
+/* Logo */
+
+/* Exchange rates */
+.exchange-rates {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 17px;
+  color: var(--secondary-color);
+}
+.exchange-rates__icon {
+  color: var(--color-success);
+}
+.exchange-rates__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+/* Exchange rates */
