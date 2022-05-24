@@ -14,6 +14,7 @@
     <!-- https://flukeout.github.io/ -->
     <header id="site-header" class="site-header">
       <div class="container">
+        <!-- Site-header top -->
         <div class="site-header__top">
           <a href="index.html" class="logo">
             <img
@@ -39,23 +40,27 @@
           </ul>
           <div class="site-header__actions">
             <button class="search-button" type="button">
-              <img
-                class="search-button__image"
-                src="img/searchIcon.svg"
-                alt="Icon search"
-                width="24"
-                height="24"
-              />
+              <span class="search-button__wrapper">
+                <img
+                  class="search-button__image"
+                  src="img/searchIcon.svg"
+                  alt="Icon search"
+                  width="24"
+                  height="24"
+                />
+              </span>
             </button>
             <button class="language-toggler" type="button">
-              <img
-                class="language-toggler__img"
-                src="img/flag.svg"
-                alt="Icon flag"
-                width="20"
-                height="20"
-              />
-              <span class="language-toggler__text">RU</span>
+              <span class="language-toggler__wrapper">
+                <img
+                  class="language-toggler__img"
+                  src="img/flag.svg"
+                  alt="Icon flag"
+                  width="20"
+                  height="20"
+                />
+                <span class="language-toggler__text">RU</span>
+              </span>
             </button>
             <a class="telegram-sub" href="https://google.ru" target="_blank">
               <img
@@ -65,10 +70,60 @@
                 width="20"
                 height="20"
               />
-              <span class="telegram-sub__text">Follow</span>
+              <span class="telegram-sub__text">Подписатся</span>
             </a>
           </div>
         </div>
+        <!-- Site-header top -->
+        <!-- SiteNav -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Узбекистана</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Мир</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Экономика</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Политика</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Общество</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Технологии</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Спорт</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Культура</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Происшествия</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="list.html" class="sitenav__link">Туризм</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- SiteNav -->
+        <!-- Banner  -->
+        <aside>
+          <a href="#">
+            <img
+              src="img/nrg-banner@2.jpg"
+              width="1200"
+              height="99"
+              srcset="img/nrg-banner.jpg 1x, img/nrg-banner@2 2x"
+              alt="NRG company"
+            />
+          </a>
+        </aside>
+        <!-- Banner  -->
       </div>
     </header>
     <!-- <script src="js/script.js"></script> -->

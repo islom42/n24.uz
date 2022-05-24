@@ -22,7 +22,7 @@ body {
   color: var(--primary-color);
 }
 .container {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -48,13 +48,19 @@ body {
   align-items: center;
 }
 .search-button {
-  padding: 8px;
+  padding: 0;
   border: none;
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   margin-right: 22px;
+}
+.search-button__wrapper {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .language-toggler {
   padding: 10px;
@@ -67,6 +73,12 @@ body {
 }
 .language-toggler__img {
   border-radius: 50%;
+  margin-right: 5px;
+}
+.language-toggler__wrapper {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
 }
 .telegram-sub {
   display: flex;
@@ -93,6 +105,10 @@ body {
 }
 .logo img {
   display: block;
+  transition: transform 0.3s ease;
+}
+.logo img:hover {
+  filter: drop-shadow(0 0 1px var(--color-success));
 }
 .logo:hover {
   transform: scaleX(1.025);
